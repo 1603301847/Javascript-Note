@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+
+    <button type="button" onclick="myFunction()">点击添加新元素</button>
+    <script>
+        var cities = ["Beijing", "Shanghai"];
+        document.getElementById("demo").innerHTML = cities;
+        // length()方法 向数组末尾添加新元素
+        function myFunction() {
+            cities[cities.length] = "Wuhan";
+            document.getElementById("demo").innerHTML = cities;
+        }
+
+    </script>
+</body>
+
+</html>

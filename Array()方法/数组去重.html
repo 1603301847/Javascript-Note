@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+
+    <script>
+        var arr = [1, 2, 3, 2, 3, 4, 5, 7, 2, 1, 8, 9];
+        document.getElementById("demo").innerHTML = arr;
+
+        // js 数组去重
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = i+1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    arr.splice(j, 1);
+                    j--;
+                    document.getElementById("demo").innerHTML = arr;
+                }
+            }
+        }
+
+        // ES6 数组去重
+        var arr1 = [1, 2, 3, 2, 3, 4, 5, 7, 2, 1, 8, 9];
+        document.getElementById("demo1").innerHTML = arr1;
+
+        var x = Array.from(new Set(arr1));
+        document.getElementById("demo1").innerHTML = x;
+
+        
+    </script>
+</body>
+
+</html>

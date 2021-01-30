@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var str1 = "Hello";
+        var str2 = "World";
+        // conact() 连接两个或多个字符串
+        var str3 = str1.concat(" ", str2);
+        document.getElementById('demo').innerHTML = str3; // Hello World
+
+        // 所有字符串方法都会返回新字符串 它们不会修改原始字符串
+        // conact()方法 代替加运算符 下面是等效的
+        var txt1 = "Hello" + " " + "World";
+        var txt2 = "Hello".concat(" ", "World");
+        console.log(txt1 == txt2); // true
+    </script>
+</body>
+
+</html>

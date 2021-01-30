@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <button type="button" onclick="myFunction()">按照数字从小到大排序/查找最小值</button>
+    <button type="button" onclick="myFunction1()">查找最大值</button>
+    <button type="button" onclick="myFunction2()">按照字母排序</button>
+
+
+    <script>
+        var arr = [100, 56, 7, 43, 9, 33];
+        document.getElementById("demo").innerHTML = arr;
+
+        function myFunction() {
+            let x = arr.sort(function (a, b) {
+                return a - b;
+            });
+            document.getElementById("demo").innerHTML = x;
+            // 查找最低数值
+            document.getElementById("demo1").innerHTML = x[0];
+        }
+
+        function myFunction1(){
+            let x = arr.sort(function(a,b){return b - a;});
+            // 查找最大值
+            document.getElementById("demo").innerHTML = x[0];
+        }
+
+        function myFunction2() {
+            let x = arr.sort();
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+
+</html>

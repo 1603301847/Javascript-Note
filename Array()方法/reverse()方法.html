@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <button type="button" onclick="myFunction()">点击反转排序</button>
+    <script>
+        var arr = ["Lemon", "Banana", "Orange", "Mango"];
+        arr.sort();
+        document.getElementById("demo").innerHTML = arr;
+        // reverse()方法 反转元素顺序
+        function myFunction() {
+            arr.reverse();
+            document.getElementById("demo").innerHTML = arr;
+        }
+    </script>
+</body>
+
+</html>

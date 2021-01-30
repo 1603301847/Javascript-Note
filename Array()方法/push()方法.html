@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+
+    <button type="button" onclick="myFunction()">点击添加新元素</button>
+    <script>
+        var fruits = ["Apple", "Banana"];
+        document.getElementById("demo").innerHTML = fruits;
+
+        // push()方法 向数组末尾添加新元素 返回新数组的长度
+        function myFunction() {
+            var x = fruits.push("Lemon");
+            document.getElementById("demo1").innerHTML = x;
+            document.getElementById("demo").innerHTML = fruits;
+        }
+    </script>
+</body>
+
+</html>

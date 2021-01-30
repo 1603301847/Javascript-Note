@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <button type="button" onclick="myFunction()">点击按照数字进行排序</button>
+    <button type="button" onclick="myFunction1()">点击按照字母进行排序</button>
+
+    <script>
+        var arr = [{
+                type: "A",
+                year: 1999
+            },
+            {
+                type: "S",
+                year: 1988
+            },
+            {
+                type: "D",
+                year: 1977
+            }
+        ];
+
+        txt();
+
+        function myFunction() {
+            arr.sort(function (a, b) {
+                return a.year - b.year
+            });
+            txt();
+        }
+
+        function myFunction1() {
+            arr.sort(function (a, b) {
+                var x = a.type.toLowerCase();
+                var y = b.type.toLowerCase();
+                if (x < y) {
+                    return -1;
+                };
+                if (x > y) {
+                    return 1;
+                };
+                return 0;
+            });
+            txt();
+        }
+
+        function txt() {
+            document.getElementById("demo").innerHTML = arr[0].type + arr[0].year + "<br>" + arr[1].type + arr[1].year +
+                "<br>" + arr[2].type + arr[2].year;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+
+    <script>
+        var arr = ["Apple", "Banana", "Orange"];
+        document.getElementById("demo").innerHTML = arr;
+        // splice()方法 向数组添加新项 
+        // 第一个参数(2) 添加新元素的位置 
+        // 第二个参数(0) 定义应删除多少元素
+        // 其他参数 定义要添加的新元素 
+        // 返回已删除项
+        var remove=arr.splice(2, 1, "Lemon", "Mango");
+        document.getElementById("demo1").innerHTML = arr;
+        document.getElementById("demo2").innerHTML = remove;
+    </script>
+</body>
+
+</html>

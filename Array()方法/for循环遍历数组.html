@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var arr, len, txt;
+        arr = ["Apple", "Banana", "Mango"];
+        len = arr.length;
+        txt = "<ul>";
+        for (var i = 0; i < len; i++) {
+            txt += "<li>" + arr[i] + "</li>";
+        }
+        txt = "</ul>";
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+
+</html>

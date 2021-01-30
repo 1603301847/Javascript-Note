@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        // 把一个字符串分割成字符串数组
+        var str = "Hello";
+        var arr = str.split("");
+        var txt = "";
+        document.getElementById('demo').innerHTML = arr;
+        for (i = 0; i < arr.length; i++) {
+            txt += arr[i] + '<br>';
+        }
+        document.getElementById('demo').innerHTML = txt;
+    </script>
+</body>
+
+</html>

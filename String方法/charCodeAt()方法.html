@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <script>
+        var txt = "Hello World";
+        // charCodeAt()方法 返回字符串中指定索引的字符 unicode 编码
+        document.getElementById('demo').innerHTML = txt.charCodeAt(0); // 72
+        txt[0] = 'A'; // 不生效
+        document.getElementById('demo1').innerHTML = txt[0];
+    </script>
+</body>
+</html>

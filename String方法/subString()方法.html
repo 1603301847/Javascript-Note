@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <script>
+        var txt = 'Apple, Banana, Mango';
+        // substring(start,end)方法 提取字符串的某个部分 并在新的字符串中返回被提取的部分 无法接受负的索引
+        document.getElementById('demo').innerHTML = txt.substring(7, 13); // Banana
+        // 如果省略第二个参数 则裁减字符串剩余的部分
+        document.getElementById('demo1').innerHTML = txt.substring(7); // Banana, Mango
+    </script>
+</body>
+
+</html>

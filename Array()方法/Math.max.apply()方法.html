@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+
+    <script>
+        var arr = [100,45,67,98,11,4];
+        // Math.max.apply()方法 等价于 Math.max()方法 返回一组数字中的最大值
+        var maxVal = Math.max.apply(null,arr);
+        var maxValue = Math.max(100,45,67,98,11,4);
+        document.getElementById("demo").innerHTML = maxVal;
+        document.getElementById("demo1").innerHTML = maxValue;
+
+        // Math.min.apply()方法 等价于 Math.min()方法 返回一组数字中的最小值
+        var minVal = Math.min.apply(null,arr);
+        var minValue = Math.min(100,45,67,98,11,4);
+        document.getElementById("demo2").innerHTML = minVal;
+        document.getElementById("demo3").innerHTML = minValue;
+    </script>
+</body>
+</html>

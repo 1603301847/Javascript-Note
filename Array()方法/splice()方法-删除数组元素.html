@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        var arr = ["Apple","Banana","Orange"];
+        // splice()方法 删除数组元素
+        // 第一个参数(0) 定义新元素应该被添加的位置
+        // 第二个参数(1) 定义应该删除多个元素
+        // 其他参数被省略 没有多余的元素需要被添加
+        arr.splice(0,1);
+        document.getElementById("demo").innerHTML = arr;
+    </script>
+</body>
+</html>

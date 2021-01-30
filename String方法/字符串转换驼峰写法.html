@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var str = "hello world";
+        var arr = str.split(" ");
+        for (var i = 0; i < arr.length; i++) {
+
+            // arr[i] = arr[i].slice(0,1).toUpperCase().concat(arr[i].substring(1,arr[i].length));
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1, arr[i].length);
+        }
+        var txt = arr.join(" ");
+        document.getElementById('demo').innerHTML = txt;
+    </script>
+</body>
+
+</html>

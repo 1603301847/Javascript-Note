@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <script>
+        var txt = 'Hello world';
+        // lastIndexOf()方法 返回指定文本在字符串中最后一次出现的索引
+        document.getElementById('demo1').innerHTML = txt.lastIndexOf('o'); // 7
+        // 如果未找到文本则返回-1
+        document.getElementById('demo2').innerHTML = txt.lastIndexOf('p'); // -1
+        // 接受作为索引起始位置的第二参数
+        document.getElementById('demo3').innerHTML = txt.lastIndexOf('o', 6); // 4
+    </script>
+</body>
+
+</html>
