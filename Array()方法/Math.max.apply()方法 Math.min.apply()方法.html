@@ -16,13 +16,13 @@
         var arr = [100,45,67,98,11,4];
         // Math.max.apply()方法 等价于 Math.max()方法 返回一组数字中的最大值
         var maxVal = Math.max.apply(null,arr);
-        var maxValue = Math.max(100,45,67,98,11,4);
+        var maxValue = Math.max(...arr);
         document.getElementById("demo").innerHTML = maxVal;
         document.getElementById("demo1").innerHTML = maxValue;
 
         // Math.min.apply()方法 等价于 Math.min()方法 返回一组数字中的最小值
         var minVal = Math.min.apply(null,arr);
-        var minValue = Math.min(100,45,67,98,11,4);
+        var minValue = Math.min(...arr);
         document.getElementById("demo2").innerHTML = minVal;
         document.getElementById("demo3").innerHTML = minValue;
     </script>

@@ -17,7 +17,9 @@
 
         // js 数组去重
         for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
             for (var j = i+1; j < arr.length; j++) {
+                console.log('------>' + arr[j]);
                 if (arr[i] == arr[j]) {
                     arr.splice(j, 1);
                     j--;

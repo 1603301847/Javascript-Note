@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+
+    <script>
+        var arr = [100, 25, 66, 89, 77, 44];
+        document.getElementById("demo").innerHTML = myArrayMax(arr);
+        document.getElementById("demo1").innerHTML = myArrayMin(arr);
+
+        function myArrayMax(maxVal) {
+            var len = maxVal.length;
+            // Infinity 是number类型 比任何有限数都大
+            var max = -Infinity;
+            while (len--) {
+                if (maxVal[len] > max) {
+                    max = maxVal[len];
+                }
+            }
+            return max;
+        }
+
+        function myArrayMin(minVal) {
+            var len = minVal.length;
+            // Infinity 是number类型 比任何有限数都大
+            var min = Infinity;
+            while (len--) {
+                if (minVal[len] < min) {
+                    min = minVal[len];
+                }
+            }
+            return min;
+        }
+    </script>
+</body>
+
+</html>
