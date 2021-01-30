@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+
+    <script>
+        var arr = [120,33,21,54,10];
+
+        // reduce()方法在每一个数组元素上运行函数，以生成（减少它）单个值
+        // reduce()方法在数组中从左到右工作
+        // reduce()方法不会减少原始数组
+
+        // 计算arr数组所有数字的总和
+        var sum = arr.reduce(myFunction,100);
+        document.getElementById("demo").innerHTML = sum;
+
+        function myFunction(total,value,index,array) {
+            return sum = total + value;
+        }
+    </script>
+</body>
+</html>

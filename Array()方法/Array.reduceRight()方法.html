@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        var arr = [11,25,48,77,99];
+        // reduceRight()方法在每个数组元素上运行函数，以生成（减少它）单个值
+        // reduceRight()方法在数组中从左到右工作
+        // reduceRight()方法不会减少原始数组
+
+        // 确定数组中所有数字的总和
+        var sum = arr.reduceRight(myFunction);
+
+        document.getElementById("demo").innerHTML = sum;
+
+        function myFunction(total,value,index,array) {
+            return sum = total + value;
+        }
+    </script>
+</body>
+</html>

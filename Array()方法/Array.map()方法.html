@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var arr = [100, 55, 46, 87, 23, 11];
+        // map()方法通过对每个数组元素执行函数来创建新数组
+        // map()方法不会对没有值得数组元素执行函数
+        // map()方法不会更改原始数组
+        var num = arr.map(myFunction);
+        document.getElementById("demo").innerHTML = num;
+        function myFunction(value,index,aray) {
+            return value * 2;
+        }
+    </script>
+</body>
+
+</html>

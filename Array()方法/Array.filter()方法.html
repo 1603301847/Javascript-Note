@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        var arr = [12,34,54,65,77,1];
+        
+        // filter()方法 创建一个包含通过测试的数组元素的新数组
+        var num = arr.filter(myFunction);
+        document.getElementById("demo").innerHTML = num;
+
+        function myFunction(value,index,array) {
+            return value > 55;
+        }
+    </script>
+</body>
+</html>

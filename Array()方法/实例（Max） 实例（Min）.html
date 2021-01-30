@@ -21,8 +21,12 @@
             // Infinity 是number类型 比任何有限数都大
             var max = -Infinity;
             while (len--) {
+                console.log(len);
                 if (maxVal[len] > max) {
+                    console.log('--->' + maxVal[len]);
+                    console.log('--->' + max);
                     max = maxVal[len];
+                    console.log('--->' + max);
                 }
             }
             return max;
@@ -33,8 +37,12 @@
             // Infinity 是number类型 比任何有限数都大
             var min = Infinity;
             while (len--) {
+                console.log(len);
                 if (minVal[len] < min) {
+                    console.log('--->' + minVal[len]);
+                    console.log('--->' + min);
                     min = minVal[len];
+                    console.log('--->' + min);
                 }
             }
             return min;
