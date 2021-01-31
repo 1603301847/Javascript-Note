@@ -11,11 +11,11 @@
     <div id="demo"></div>
     <script>
         var arr = [100, 55, 46, 87, 23, 11];
-        // map()方法通过对每个数组元素执行函数来创建新数组
-        // map()方法不会对没有值得数组元素执行函数
-        // map()方法不会更改原始数组
+        /* map()方法通过对每个数组元素执行函数来创建新数组
+           map()方法不会对没有值得数组元素执行函数
+           map()方法不会更改原始数组 */
         var num = arr.map(myFunction);
-        document.getElementById("demo").innerHTML = num;
+        document.getElementById("demo").innerHTML = num; // 200,110,92,174,46,22
         function myFunction(value,index,aray) {
             return value * 2;
         }

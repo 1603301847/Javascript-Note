@@ -8,14 +8,15 @@
 <body>
     <div id="demo"></div>
     <script>
-        var arr = [12,34,54,65,77,1];
-        
-        // filter()方法 创建一个包含通过测试的数组元素的新数组
-        var num = arr.filter(myFunction);
-        document.getElementById("demo").innerHTML = num; // 65,77
+        var arr = [55,78,99,11,23,36];
+        // some()方法 检查某些数组是否通过了测试
 
+        // 检查某些数值是否大于18
+        var num = arr.some(myFunction);
+
+        document.getElementById("demo").innerHTML = num; // true
         function myFunction(value,index,array) {
-            return value > 55;
+            return value > 18;
         }
     </script>
 </body>

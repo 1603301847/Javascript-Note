@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var fruits = ["Apple", "Orange", "Mango", "Lemon"];
+        /*
+            array.indexOf(item,index)方法 在数组中搜索元素的值 并返回该元素的索引
+            item 必需，要检索的项目。 start 可选，从哪里开始搜索。负值将从结尾开始给定位置开始，并搜索到结尾。
+            如果未找到项目 则返回-1
+            如果项目多次出现，则返回第一次出现的位置
+        */
+        document.getElementById("demo").innerHTML = fruits.indexOf("Apple");
+    </script>
+</body>
+
+</html>

@@ -11,9 +11,12 @@
     <div id="demo"></div>
     <script>
         var numbers = [45, 4, 9, 16, 25];
+        // every()方法检查所有数组是否通过测试
+
+        // 检查所有的值是否大于18
         var allOver18 = numbers.every(myFunction);
 
-        document.getElementById("demo").innerHTML = "所有大于 18 的是：" + allOver18;
+        document.getElementById("demo").innerHTML = "所有大于 18 的是：" + allOver18; // false
 
         function myFunction(value, index, array) {
             return value > 18;

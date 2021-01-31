@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        var arr = [1,6,12,25,36,88];
+        /*
+            findIndex()方法 返回通过测试函数的第一个数组元素的索引
+        */
+
+        // 查找大于18的第一个元素的索引
+        var num = arr.findIndex(myFunction);
+        document.getElementById("demo").innerHTML = num; // 3
+
+        function myFunction(value,index,array) {
+            return value > 18;
+        }
+    </script>
+</body>
+</html>
