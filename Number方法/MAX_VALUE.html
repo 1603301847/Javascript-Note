@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+
+    <script>       
+        /**
+         * MAX_VALUE 返回JavaScript中可能的最大数
+        */
+        var x = Number.MAX_VALUE;
+        document.getElementById("demo").innerHTML = x; // 1.7976931348623157e+308
+
+        var a = 6;
+        document.getElementById("demo1").innerHTML = x.MAX_VALUE; // undefined 
+    </script>
+</body>
+</html>

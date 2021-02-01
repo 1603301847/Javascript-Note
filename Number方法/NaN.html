@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+
+    <script>
+        /**
+         * 表示非数字值 ("Not-a-Number")
+        */
+        var x = Number.NaN;
+        document.getElementById("demo").innerHTML = x; // NaN
+
+        var a = 100  / "Apple";
+        document.getElementById("demo1").innerHTML = a; // NaN
+
+    </script>
+</body>
+</html>
