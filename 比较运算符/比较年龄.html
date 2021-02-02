@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="age" value="18" />
+    <button type="button" onclick="myFunction()">测试</button>
+    <div id="demo"></div>
+    <script>
+        function myFunction() {
+            var age, voteable;
+            age = Number(document.getElementById("age").value);
+            if (isNaN(age)) {
+                voteable = "您输入的不是数字"
+            } else {
+                voteable = (age < 18) ? "年轻" : "成熟";
+            }
+            document.getElementById("demo").innerHTML = voteable;
+        }
+    </script>
+</body>
+
+</html>

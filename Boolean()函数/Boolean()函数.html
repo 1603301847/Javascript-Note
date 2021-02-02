@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var b1 = Boolean(100); // true
+        var b2 = Boolean(3.14);// true
+        var b3 = Boolean(-15);// true
+        var b4 = Boolean("Hello");// true
+        var b5 = Boolean("false");// true
+        var b6 = Boolean(1 + 7 + 3.14);// true
+
+        var b7 = Boolean(0); // false
+        var b8 = Boolean(-0); // false
+        var b9 = Boolean(""); // false 
+        var b10 = Boolean(undefined); // false
+        var b11 = Boolean(null); // false
+        var b12 = Boolean(false); // false
+        var b13 = Boolean(NaN); // false
+
+        document.getElementById("demo").innerHTML = "100 是" + b1 + "<br>" +
+        "3.14 是" + b2 + "<br>" + "-15 是" + b3 + "<br>" + "任何（非空）字符串是" + b4 + "<br>" +
+        "任何表达式（除了零）是" + b6 + "<br>" + "零 是" + b7 + "<br>" + "-0(负零) 是"  + b8 + "<br>" +
+        "undefined 是" + b10 + "<br>" + "null 是" + b11 + "<br>" + "false 是" + b12 + "<br>" + "NaN 是" + b13 + "<br>";
+    </script> 
+</body>
+
+</html>

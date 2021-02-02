@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var today, someday, text;
+        today = new Date();
+        someday = new Date();
+        someday.setFullYear(2049, 0, 2);
+        if (someday > today) {
+            text = "今天在 2049 年 1 月 16 日之前";
+        } else {
+            text = "今天在 2049 年 1 月 16 日之后";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

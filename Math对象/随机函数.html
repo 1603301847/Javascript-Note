@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10)">点击</button>
+    <div id="demo"></div>
+    <script>
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+    </script>
+</body>
+
+</html>

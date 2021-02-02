@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="age" value="18" />
+    <button onclick="myFunction()">测试</button>
+    <div id="demo"></div>
+    <script>
+        function myFunction() {
+            var age, voteable;
+            age = document.getElementById("age").value;
+            voteable = (age < 18) ? "好年轻" : "够成熟";
+            document.getElementById("demo").innerHTML = voteable;
+        }
+    </script>
+</body>
+
+</html>

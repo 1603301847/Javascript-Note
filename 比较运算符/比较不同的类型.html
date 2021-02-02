@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+    <div id="demo3"></div>
+    <div id="demo4"></div>
+    <div id="demo5"></div>
+    <div id="demo6"></div>
+    <div id="demo7"></div>
+    <script>
+        /**
+         * 如果字符串与数字进行比较，那么在做比较时JavaScript会把字符串转换为数值。空字符串将被转换为0。
+         * 非数值字符串将被转换为false的NaN
+         * 当比较两个字符串时，"2" 大于 "12", 因为（按照字母排序）1小于2
+         *                   two    twelve
+         */
+        document.getElementById("demo").innerHTML = 2 < 12; // true
+        document.getElementById("demo1").innerHTML = 2 < "12"; // true
+        document.getElementById("demo2").innerHTML = 2 < "John"; // false
+        document.getElementById("demo3").innerHTML = 2 > "John"; // false
+        document.getElementById("demo4").innerHTML = 2 == "John"; // false
+        document.getElementById("demo5").innerHTML = "2" < "12"; // false
+        document.getElementById("demo6").innerHTML = "2" > "12"; // true
+        document.getElementById("demo7").innerHTML = "2" == "12"; // false
+    </script>
+</body>
+
+</html>
