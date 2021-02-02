@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+
+    <script>
+        var d = new Date();
+        /**
+         * getMonth()方法 以 0 到 11 之间的数字返回日期的月份
+         * 要获得正确的月份，必须加 1 
+        */
+        document.getElementById("demo").innerHTML = d.getMonth() + 1;
+
+        var d1 = new Date();
+        var months =
+        [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+        ];
+        document.getElementById("demo1").innerHTML = months[d1.getMonth()];
+    </script>
+</body>
+</html>
