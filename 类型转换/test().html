@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p01">The best things in life are free!</p>
+
+    <p id="demo"></p>
+
+    <script>
+        text = document.getElementById("p01").innerHTML;
+        document.getElementById("demo").innerHTML = /e/.test(text);
+    </script>
+
+</body>
+
+</html>

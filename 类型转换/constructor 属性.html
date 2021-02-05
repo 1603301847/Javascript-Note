@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        // constructor 属性 返回 JavaScript 变量的构造器函数 
+        document.getElementById("demo").innerHTML = "john".constructor + "<br>" + (3.14).constructor + "<br>" + false
+            .constructor + "<br>" + [1, 2, 3, 4].constructor + "<br>" + {
+                name: 'john',
+                age: 34
+            }.constructor + "<br>" +
+            new Date().constructor + "<br>" + function () {}.constructor;
+    </script>
+</body>
+
+</html>

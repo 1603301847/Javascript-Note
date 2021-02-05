@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /**
+         * NaN 的数据类型是数值
+         * 数组的数据类型是对象
+         * 日期的数据类型是对象
+         * null的数据类型是对象
+         * 未定义变量的数据类型是undefined
+         * 尚未赋值的变量的数据类型是undefined
+         * 
+         * typeof 无法判断JavaScript对象是否是数组（或日期）
+         * typeof 运算符不是变量。 它属于运算符。 运算符（比如 + - * /）没有数据类型。
+         * typeof 始终会返回字符串（包含运算数的类型）
+        */
+        document.getElementById("demo").innerHTML = typeof "john" + "<br>" + typeof 3.14 + "<br>" +
+            typeof NaN + "<br>" + typeof false + "<br>" + typeof [1, 2, 3, 4] + "<br>" + typeof {
+                name: 'john',
+                age: 34
+            } + "<br>" + typeof new Date + "<br>" + typeof
+        function () {} + "<br>" +
+        typeof myCar + "<br>" + typeof null;
+    </script>
+</body>
+
+</html>

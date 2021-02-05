@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=`">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /**
+         * try 语句允许定义一个代码块，以便在执行时检测错误
+         * catch 语句允许定义一个要执行的代码块，如果try代码块中发生错误
+         * 
+         * try{
+         * 供测试的代码块
+         * } 
+         * catch(err){
+         * 处理错误的代码块
+         * }
+         */
+        try {
+            addalert("Hello World!");
+        } catch (err) {
+            document.getElementById("demo").innerHTML = err.message;
+        }
+    </script>
+</body>
+
+</html>

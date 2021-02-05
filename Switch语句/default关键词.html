@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var greeting;
+        var day = new Date().getDay();
+        switch (day) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                greeting = "周末快到了";
+                break;
+            case 6:
+                greeting = "星期六";
+                break;
+            case 0:
+                greeting = "星期天";
+                break;
+            default:
+                greeting = "期待周末";
+        }
+        document.getElementById("demo").innerHTML = greeting;
+    </script>
+</body>
+
+</html>

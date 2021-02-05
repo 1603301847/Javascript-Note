@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var text = "";
+        var i;
+        for (i = 0; i < 10; i++) {
+            // break "跳出"循环
+            if (i == 3) {
+                break;
+            }
+            text += "数字是" + i + "<br>";
+
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

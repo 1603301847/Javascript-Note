@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="myFunction()">点击</button>
+    <div id="demo"></div>
+    <script>
+        function myFunction() {
+            var greeting;
+            var time = new Date().getHours();
+
+            if (time < 10) {
+                greeting = "早安";
+            } else if (time < 20) {
+                greeting = "日安";
+            } else {
+                greeting = "晚安";
+            }
+            document.getElementById("demo").innerHTML = greeting;
+        }
+    </script>
+</body>
+
+</html>

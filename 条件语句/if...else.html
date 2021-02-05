@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=5, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">晚安</div>
+    <script>
+        if (new Date().getHours() < 18) {
+            document.getElementById("demo").innerHTML = "学习的一天";
+        } else {
+            document.getElementById("demo").innerHTML = "美好的一天";
+        }
+    </script>
+</body>
+
+</html>

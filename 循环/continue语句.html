@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        var text = " ";
+        for (var i = 0; i < 10; i++) {
+            // "跳过" 循环中的一个迭代
+            if (i === 3) {
+                continue;
+            }
+            text += "数字是" + i + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>
