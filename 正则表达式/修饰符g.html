@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="myFunction()">点击查找</button>
+    <div id="demo"></div>
+
+    <script>
+        /**
+         * 修饰符 g 执行全局匹配（查找所有匹配而非在找到第一个匹配后停止）。
+         */
+        function myFunction() {
+            var str = "Is this all there is?";
+            var p = /is/g;
+            var result = str.match(p);
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+</body>
+</html>

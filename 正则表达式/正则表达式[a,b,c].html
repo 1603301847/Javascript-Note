@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="myFunction()">点击查找</button>
+    <div id="demo"></div>
+    <script>
+        /**
+         * 正则表达式[0-9] 字符串中的数字 1 到 4 进行全局搜索
+         */
+        function myFunction() {
+            var str = "Is this all there is";
+            var p = /[h]/g;
+            var result = str.match(p);
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

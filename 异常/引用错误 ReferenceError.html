@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /**
+         * 假如您使用（引用）了尚未声明的变量，则 ReferenceError 会被抛出
+        */
+        var x;
+        try {
+            x = y + 1;
+        } catch (err) {
+            document.getElementById("demo").innerHTML = err.name;
+        }
+    </script>
+</body>
+
+</html>

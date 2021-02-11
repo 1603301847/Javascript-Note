@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /**
+         * 使用 decodeURI() 无法解码某些字符
+         * URI 函数中使用非法字符，则 URIError 被抛出
+        */
+        try {
+            decodeURI("%%%");
+        } catch (err) {
+            document.getElementById("demo").innerHTML = err.name;
+        }
+    </script>
+</body>
+
+</html>

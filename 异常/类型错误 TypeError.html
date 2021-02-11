@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script>
+        /**
+         * 使用的值不在期望值的范围之内，则 TypeError 被抛出
+        */
+        var num = 1;
+        try{
+            num.toUpperCase();
+        }catch(err){
+            document.getElementById("demo").innerHTML = err.name;
+        }
+    </script>
+</body>
+</html>

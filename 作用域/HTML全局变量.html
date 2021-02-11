@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /**
+         * 在 HTML 中，通过 var 定义的全局变量，会成为 window 变量。
+         */
+        var carName = "porsche";
+        document.getElementById("demo").innerHTML = window.carName;
+    </script>
+</body>
+
+</html>
