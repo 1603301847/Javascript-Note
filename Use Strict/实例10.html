@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /**
+         * 不允许写入 get-only 属性
+        */
+        "use strict"; // Uncaught TypeError: Cannot set property x of #<Object> which has only a getter
+        var obj = {
+            get x() {
+                return 0
+            }
+        };
+        obj.x = 3.14;
+    </script>
+</body>
+
+</html>

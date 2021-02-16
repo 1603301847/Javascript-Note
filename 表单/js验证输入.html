@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>请输入1-10之间的数字</p>
+    <input type="text" id="inp" />
+    <input type="button" value="提交" onclick="myFunction()" />
+    <div id="demo"></div>
+    <script>
+        function myFunction() {
+            var val, text;
+            val = document.getElementById("inp").value;
+            if (isNaN(val) || val < 1 || val > 10) {
+                text = "输入无效";
+            } else {
+                text = "输入有效";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

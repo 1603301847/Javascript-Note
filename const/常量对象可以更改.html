@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        // 创建对象
+        const car = {
+            type: "Porsche",
+            model: "911",
+            color: "white"
+        };
+
+        // 更改属性
+        car.color = "red";
+
+        // 添加属性
+        car.owner = "Steve";
+
+        // 显示属性
+        document.getElementById("demo").innerHTML = "车主是： " + car.owner;
+    </script>
+</body>
+
+</html>

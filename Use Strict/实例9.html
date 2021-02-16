@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /**
+         * 不允许写入只读属性
+        */
+        "use strict";
+        var obj = {};
+        Object.defineProperty(obj, "x", {
+            value: 0,
+            writable: false
+        });
+        obj.x = 3.14; // Uncaught TypeError: Cannot assign to read only property 'x' of object '#<Object>'
+    </script>
+</body>
+
+</html>

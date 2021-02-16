@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /**
+         * Javascript this关键词指的是它所属的对象
+         * 它拥有不同的值，具体取决于它的使用位置。
+         * 在方法中，this指的是所有者对象。
+         * 单独的情况下，this指的是全局对象。
+         * 在函数中，this指的是全局对象。
+         * 在函数中，严格模式下，this是undefined。
+         * 在事件中，this指的是接收事件的元素。
+         * 
+         * 像call()和apply()这样的方法可以将this引用到任何对象。
+         * 
+         * 在对象方法中，this指的是此方法的 “拥有者”。
+         * this指的是person对象，person对象是fullName方法的拥有者。
+        */
+        // 创建对象：
+        var person = {
+            firstName: "Bill",
+            lastName: "Gates",
+            id: 678,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        // 显示来自对象的数据：
+        document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+</body>
+
+</html>

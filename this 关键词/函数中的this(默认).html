@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /**
+         * 在 JavaScript 函数中，函数的拥有者默认绑定 this。
+         * 因此，在函数中，this 指的是全局对象 [object Window]。
+        */
+        document.getElementById("demo").innerHTML = myFunction();
+
+        function myFunction() {
+            return this;
+        }
+    </script>
+</body>
+
+</html>
