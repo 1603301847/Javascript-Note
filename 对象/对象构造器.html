@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        var myFriend = new Person("Bill", "Gates", 62, "blue");
+        var myBrother = new Person("Steve", "Jobs", 56, "green");
+
+        document.getElementById("demo").innerHTML =
+            "My friend is " + myFriend.age + ". My brother is " + myBrother.age;
+    </script>
+</body>
+
+</html>

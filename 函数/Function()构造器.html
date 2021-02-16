@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /*
+        * JavaScript 有一个内置的函数构造函数。
+        * JavaScript 函数是通过 function 关键词定义的。
+        * 函数也可以通过名为 Function() 的内建 JavaScript 函数构造器来定义
+        */
+        var myFunction = new Function("a", "b", "return a * b");
+        document.getElementById("demo").innerHTML = myFunction(4, 3);
+    </script>
+</body>
+
+</html>

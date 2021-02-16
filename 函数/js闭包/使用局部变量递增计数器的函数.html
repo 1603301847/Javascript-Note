@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="myFunction()">计数！</button>
+    <p id="demo">0</p>
+    <script>
+        // 递增计数器的函数
+        function add() {
+            var counter = 0;
+            counter += 1;
+            return counter;
+        }
+
+        // 试图递增计数器
+        function myFunction() {
+            document.getElementById("demo").innerHTML = add();
+        }
+    </script>
+</body>
+
+</html>

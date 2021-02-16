@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        /*
+         * 函数存储在变量后，变量可以用作函数
+         */
+        var x = function (a, b) {
+            return a * b
+        };
+        var z = x(4, 3);
+        document.getElementById("demo").innerHTML = x(4, 3);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var obj = {
+            counter: 0,
+            get reset() {
+                this.counter = 0;
+            },
+            get increment() {
+                this.counter++;
+            },
+            get decrement() {
+                this.counter--;
+            },
+            set add(value) {
+                this.counter += value;
+            },
+            set subtract(value) {
+                this.counter -= value;
+            }
+        };
+        // 操作计数器：
+        obj.reset;
+        obj.add = 5;
+        obj.subtract = 1;
+        obj.increment;
+        obj.decrement;
+        // 显示计数器：
+        document.getElementById("demo").innerHTML = obj.counter;
+    </script>
+
+</body>
+
+</html>
