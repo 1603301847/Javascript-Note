@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            width: 200px;
+            height: 200px;
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">鼠标移上来生成随机数段落，点击删除按钮清除移上来事件</div>
+    <p id="num"></p>
+    <button onclick="removeHandler()">删除</button>
+    <script>
+        var x = document.getElementById("demo");
+        x.addEventListener("mousemove", myMove);
+
+        function myMove() {
+            document.getElementById("num").innerHTML = Math.random();
+        }
+
+        function removeHandler() {
+            x.removeEventListener("mousemove", myMove);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">点击</button>
+    <div id="demo"></div>
+    <script>
+        /**
+         * addEventListener() 方法为指定元素指定事件处理程序
+         * addEventListener() 方法允许您向相同元素添加多个事件，同时不覆盖已有事件
+         * 向相同元素添加不同类型的事件
+         */
+        var x = document.getElementById("btn")
+        x.addEventListener("click", myFunction);
+        x.addEventListener("mouseout", someOtherFunction);
+
+        function myFunction() {
+            alert("Hello World!");
+        }
+
+        function someOtherFunction() {
+            document.getElementById("demo").innerHTML = "此函数也被执行了！";
+        }
+    </script>
+</body>
+
+</html>

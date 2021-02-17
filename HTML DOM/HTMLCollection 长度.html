@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Hello World!</p>
+
+    <p>Hello China!</p>
+
+    <p id="demo"></p>
+    <button onclick="myFunction()">点击给段落添加背景颜色</button>
+    <script>
+        var myCollection = document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML =
+            "此文档包含 " + myCollection.length + " 段文字。";
+
+        /**
+         * HTMLCollection 并非数组！
+         HTMLCollection 也许看起来像数组，但并非数组。
+        */
+        function myFunction() {
+            for (var i = 0; i < myCollection.length; i++) {
+                myCollection[i].style.backgroundColor = "red";
+            }
+        }
+    </script>
+
+</html>

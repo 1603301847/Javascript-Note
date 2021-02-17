@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="frm1" action="/demo/action_page.php">
+        First name: <input type="text" name="fname" value="Bill"><br>
+        Last name: <input type="text" name="lname" value="Gates"><br><br>
+        <input type="submit" value="提交">
+    </form>
+    <button onclick="myFunction()">试一试</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.forms["frm1"];
+            var text = "";
+            var i;
+            for (i = 0; i < x.length; i++) {
+                text += x.elements[i].value + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>
