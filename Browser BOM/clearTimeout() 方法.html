@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="myVar = setTimeout(myFunction, 3000)">点击，等待3秒，显示弹窗</button>
+    <button onclick="clearTimeout(myVar)">3秒内点击不显示弹窗</button>
+
+    <script>
+        /**
+         * clearTimeout() 方法停止执行 setTimeout() 中规定的函数。
+        */
+        function myFunction() {
+            alert("Hello");
+        }
+    </script>
+</body>
+
+</html>

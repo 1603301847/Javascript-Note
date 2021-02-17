@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <p><b>注释：</b>如果端口号是默认值（对于 http 为 80，对于 https 为 443），则大多数浏览器将显示 0 或不显示。</p>
+
+    <script>
+        /**
+         * window.location.port 属性返回（当前页面的）互联网主机端口的编号。
+        */
+        document.getElementById("demo").innerHTML =
+            "当前页面的 URL 端口号是：" + window.location.port;
+    </script>
+</body>
+</html>
