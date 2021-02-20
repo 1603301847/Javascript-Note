@@ -11,6 +11,11 @@
     <p id="demo"></p>
 
     <script>
+        /***
+         * exec() 方法是一个正则表达式方法。
+         * 它通过指定的模式（pattern）搜索字符串，并返回已找到的文本。
+         * 如果未找到匹配，则返回 null。
+         */
         var obj = /e/.exec("The best things in life are free!");
         document.getElementById("demo").innerHTML =
             "Found " + obj[0] + " in position " + obj.index + " in the text: " + obj.input;
