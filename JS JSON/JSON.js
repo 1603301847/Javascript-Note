@@ -56,11 +56,11 @@
   * JSON – 求值为 JavaScript 对象
   * JSON 格式几乎等同于 JavaScript 对象。
   * 在 JSON 中，键必须是字符串，由双引号包围：
-  * 
+  *
   * JSON
   * { "name":"Bill Gates" }
   * 在 JavaScript 中，键可以是字符串、数字或标识符名称：
-  * 
+  *
   * JavaScript
   * { name:"Bill Gates" }
   * JSON 值
@@ -79,7 +79,7 @@
   * JSON
   * { "name":"Bill Gates" }
   * 在 JavaScript 中，您可以书写使用双引号或单引号的字符串值：
-  * 
+  *
   * JavaScript
   * { name:'Bill Gates' }
 */
@@ -91,7 +91,7 @@
 /**
  * JSON vs XML
  * JSON 和 XML 均可用于从 web 服务器接收数据。
- * 
+ *
  * 下面的 JSON 和 XML 实例都定义了雇员对象，包含了由 3 个雇员构成的数组：
  * JSON 实例
  *  {"employees":[
@@ -126,56 +126,83 @@
  * JSON 的读写速度更快
  * JSON 可使用数组
  * 最大的不同在于：XML 必须使用 XML 解析器进行解析。而 JSON 可通过标准的 JavaScript 函数进行解析。
- * 
+ *
  * 为什么 JSON 比 XML 更好？
  * XML 比 JSON 更难解析。
  * JSON 被解析为可供使用的 JavaScript 对象。
  * 对于 AJAX 应用程序，JSON 比 XML 更快更易用：
- * 
+ *
  * 使用 XML
  * 读取 XML 文档
  * 使用 XML DOM 遍历文档
  * 提取变量中存储的值
- * 
+ *
  * 使用 JSON
  * 读取 JSON 字符串
  * JSON.Parse JSON 字符串
  */
 
- /***
-  * JSON 数据类型
-  * 
-  * 有效的数据类型
-  * 
-  * 在 JSON 中，值必须是以下数据类型之一：
-  * 字符串
-  * 数字
-  * 对象（JSON 对象）
-  * 数组
-  * 布尔
-  * Null
-  * 
-  * JSON 的值不可以是以下数据类型之一：
-  * 函数
-  * 日期
-  * undefined
-  * 
-  * JSON 字符串: JSON 中的字符串必须用双引号包围。
-  * { "name":"John" }
-  * 
-  * JSON 数字: JSON 中的数字必须是整数或浮点数。
-  * { "age":30 }
-  * 
-  * JSON 对象: JSON 中的值可以是对象。
-  * {"employee":{ "name":"Bill Gates", "age":62, "city":"Seattle" }}
-  * JSON 中作为值的对象必须遵守与 JSON 对象相同的规则。
-  * 
-  * JSON 数组:JSON 中的值可以是数组。
-  * {"employees":[ "Bill", "Steve", "David" ]}
-  * 
-  * JSON 布尔:JSON 中的值可以是 true/false。
-  * { "sale":true }
-  * 
-  * JSON null:JSON 中的值可以是 null。
-  * { "middlename":null }
-  */
+/***
+ * JSON 数据类型
+ *
+ * 有效的数据类型
+ *
+ * 在 JSON 中，值必须是以下数据类型之一：
+ * 字符串
+ * 数字
+ * 对象（JSON 对象）
+ * 数组
+ * 布尔
+ * Null
+ *
+ * JSON 的值不可以是以下数据类型之一：
+ * 函数
+ * 日期
+ * undefined
+ *
+ * JSON 字符串: JSON 中的字符串必须用双引号包围。
+ * { "name":"John" }
+ *
+ * JSON 数字: JSON 中的数字必须是整数或浮点数。
+ * { "age":30 }
+ *
+ * JSON 对象: JSON 中的值可以是对象。
+ * {"employee":{ "name":"Bill Gates", "age":62, "city":"Seattle" }}
+ * JSON 中作为值的对象必须遵守与 JSON 对象相同的规则。
+ *
+ * JSON 数组:JSON 中的值可以是数组。
+ * {"employees":[ "Bill", "Steve", "David" ]}
+ *
+ * JSON 布尔:JSON 中的值可以是 true/false。
+ * { "sale":true }
+ *
+ * JSON null:JSON 中的值可以是 null。
+ * { "middlename":null }
+ */
+
+
+
+/***
+ * JSON.parse() 把文本转换为 JavaScript 对象
+ * JSON.stringify() 把 JavaScript 对象转换为字符串
+ */
+
+
+
+/**
+ * JSON 对象
+ * 对象语法 { "name":"Bill Gates", "age":62, "car":null }
+ * JSON 对象被花括号 {} 包围。
+ * JSON 对象以键/值对书写。
+ * 键必须是字符串，值必须是有效的 JSON 数据类型（字符串、数字、对象、数组、布尔或 null）。
+ * 键和值由冒号分隔。
+ * 每个键/值对由逗号分隔。
+ */
+
+/**
+ * JSON 数组
+ * 作为 JSON 对象的数组 [  "Porsche", "BMW", "Volvo" ]
+ * JSON 中的数组几乎与 JavaScript 中的数组相同。
+ * 在 JSON 中，数组值的类型必须属于字符串、数字、对象、数组、布尔或 null。
+ * 在 JavaScript 中，数组值可以是以上所有类型，外加任何其他有效的 JavaScript 表达式，包括函数、日期和 undefined。
+ */

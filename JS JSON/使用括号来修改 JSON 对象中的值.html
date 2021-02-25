@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var myObj, i, x = "";
+        myObj = {
+            "name": "Bill Gates",
+            "age": 62,
+            "cars": {
+                "car1": "Porsche",
+                "car2": "BMW",
+                "car3": "Volvo"
+            }
+        }
+        myObj.cars["car2"] = "Mercedes Benz";
+
+        for (i in myObj.cars) {
+            x += myObj.cars[i] + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = x;
+    </script>
+</body>
+
+</html>
