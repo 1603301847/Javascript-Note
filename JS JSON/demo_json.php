@@ -1,0 +1,1 @@
+来自 Seattle 的 Bill Gates 今年 62 岁了。

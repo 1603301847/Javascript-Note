@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+       * 把 JavaScript 对象转换为 JSON 字符串，然后发送到服务器。
+       */
+      var myObj = { name: "Bill Gates", age: 62, city: "Seattle" };
+      var myJSON = JSON.stringify(myObj);
+      window.location = "./demo_json.php?x=" + myJSON;
+    </script>
+  </body>
+</html>
