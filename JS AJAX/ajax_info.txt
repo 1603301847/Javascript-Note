@@ -1,0 +1,6 @@
+AJAX
+AJAX 并不是编程语言。
+
+AJAX 是一种从网页访问 Web 服务器的技术。
+
+AJAX 代表异步 JavaScript 和 XML。
