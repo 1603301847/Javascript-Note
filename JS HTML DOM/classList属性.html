@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mystyle {
+            width: 500px;
+            height: 50px;
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        .anotherClass {
+            background-color: coral;
+            color: white;
+        }
+
+        .thirdClass {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .newClassName {
+            width: 400px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            font-size: 25px;
+            color: navy;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>点击按钮为DIV元素添加多个类</p>
+    <button onclick="myFunctionAdd()">点我添加类名</button>
+    <button onclick="myFunctionRemove()">点我移除类名</button>
+    <button onclick="myFunctionToggle()">点我切换类名</button>
+    <button onclick="myFunctionItem()">点我显示元素类名索引</button>
+    <button onclick="myFunctionContains()">点我查看元素是否有此类名</button>
+
+    <div id="myDIV" class="mystyle anotherClass thirdClass">我是一个DIV元素</div>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        /**
+         * classList 属性返回元素的类名，作为 DOMTokenList 对象。
+         * 该属性用于在元素中添加，移除及切换 CSS 类。
+         * classList 属性是只读的，可以使用 add() 和 remove() 方法修改它。
+         * length 返回类列表中类的数量 该属性是只读的
+         */
+
+        // add(class1, class2, ...) 在元素中添加一个或多个类名。 如果指定的类名已存在，则不会添加。
+        function myFunctionAdd() {
+            document.getElementById("myDIV").classList.add("mystyle", "anotherClass", "thirdClass");
+        }
+
+        // remove(class1, class2, ...) 移除元素中一个或多个类名。 注意： 移除不存在的类名，不会报错。
+        function myFunctionRemove() {
+            document.getElementById("myDIV").classList.remove("mystyle", "anotherClass", "thirdClass");
+        }
+
+        // toggle(class, true|false) 在元素中切换类名。
+        // 第一个参数为要在元素中移除的类名，并返回 false。
+        // 如果该类名不存在则会在元素中添加类名，并返回 true。
+        // 第二个是可选参数，是个布尔值用于设置元素是否强制添加或移除类，不管该类名是否存在。例如：
+        // 移除一个 class: element.classList.toggle("classToRemove", false);
+        // 添加一个 class: element.classList.toggle("classToAdd", true);
+        function myFunctionToggle() {
+            document.getElementById("myDIV").classList.toggle("newClassName");
+        }
+
+        // item(index) 返回元素中索引值对应的类名。索引值从 0 开始。 如果索引值在区间范围外则返回 null
+        function myFunctionItem() {
+            var x = document.getElementById("myDIV").classList.item(0);
+            document.getElementById("demo").innerHTML = x;
+        }
+
+        // contains(class) 返回布尔值，判断指定的类名是否存在。 可能值: true - 元素包已经包含了该类名 false - 元素中不存在该类名
+        function myFunctionContains() {
+            var y = document.getElementById("myDIV").classList.contains("mystyle");
+            document.getElementById("demo1").innerHTML = y;
+        }
+    </script>
+</body>
+
+</html>
